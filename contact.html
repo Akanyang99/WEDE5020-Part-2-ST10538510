@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Harvest of Hygiene NPO in Pretoria and Soweto - email, phone, maps.">
+    <title>Contact - Harvest of Hygiene</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- leaflet maps css - I used this for part 2 maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+        <h1 class="logo">Harvest of Hygiene</h1>
+        <button id="mobileMenuToggle" style="display:none;">☰</button>
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">What We Do</a>
+            <a href="enquiry.html">Get Involved</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding:30px 20px;">
+
+    <h2>Contact Us & Find Us</h2>
+    <p><b>Email:</b> info@harvestofhygiene.org | <b>Phone:</b> 071 123 4567 (WhatsApp) | <b>Office:</b> Pretoria, Gauteng</p>
+    <br>
+
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+        <div style="flex:1; min-width:300px;">
+            <h3>1. Pretoria Office (Main)</h3>
+            <p>123 Church Street, Pretoria, 0001 - We are here Mon-Fri 8am-4pm</p>
+            <div id="map1" style="width:100%; height:300px; border:1px solid #ccc; border-radius:10px; margin-top:10px;"></div>
+        </div>
+
+        <div style="flex:1; min-width:300px;">
+            <h3>2. Soweto Distribution Centre</h3>
+            <p>45 Vilakazi Street, Soweto, 1868 - Where we pack and distribute packs</p>
+            <div id="map2" style="width:100%; height:300px; border:1px solid #ccc; border-radius:10px; margin-top:10px;"></div>
+        </div>
+
+    </div>
+
+    <br><br>
+    <h3>Send us a quick message</h3>
+    <form id="contactForm" style="max-width:500px;">
+        <input type="text" id="contactName" placeholder="Your name" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;" required>
+        <input type="email" id="contactEmail" placeholder="Your email" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;" required>
+        <textarea id="contactMsg" placeholder="Your message..." rows="3" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;" required></textarea>
+        <button type="submit" class="btn" style="background:#DD6B20; color:white; padding:10px 15px; border:none; border-radius:5px;">Send</button>
+        <p id="contactSuccess" style="color:green; display:none; margin-top:10px;">Message sent! We will reply soon.</p>
+    </form>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Harvest of Hygiene NPO | Reg: 234-567 NPO</p>
+        <p style="font-size:12px;">WEDE5020 Part 2 - Akanyang Montshiwa - Leaflet maps added</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

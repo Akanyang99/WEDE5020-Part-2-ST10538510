@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our programmes - free sanitary packs, health workshops, community drives in Gauteng.">
+    <title>What We Do - Harvest of Hygiene</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+        <h1 class="logo">Harvest of Hygiene</h1>
+        <button id="mobileMenuToggle" style="display:none;">☰</button>
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="active">What We Do</a>
+            <a href="enquiry.html">Get Involved</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding:30px 20px;">
+
+    <h2>Our Programmes</h2>
+    <p>What we do every month in Gauteng schools. We have 3 main programmes.</p>
+    <br>
+
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+        <div class="service-card" style="flex:1; min-width:250px; border:1px solid #ddd; padding:15px; border-radius:10px;">
+            <img src="images/sanitary-pack-contents.jpg" alt="Sanitary pack contents with Bodyform pads, Nivea deodorant, soap, tissues for school girls" style="width:100%; border-radius:8px;">
+            <br><br>
+            <h3>1. Monthly Packs</h3>
+            <p>We give free sanitary packs to school girls. In each pack we put Bodyform pads, small soap, Nivea deodorant, tissues and a booklet. This is the real photo of our packs (see image above).</p>
+            <br>
+            <p><b>Cost per pack: R50</b> | <b>Girls helped: 5000+</b></p>
+        </div>
+
+        <div class="service-card" style="flex:1; min-width:250px; border:1px solid #ddd; padding:15px; border-radius:10px;">
+            <img src="images\hygiene-products.jpg" alt="Personal hygiene education illustration used in our township school workshops" style="width:100%; border-radius:8px;">
+            <br><br>
+            <h3>2. Education Workshops</h3>
+            <p>We go to schools in Soweto and Tembisa and teach girls about periods, hygiene and health. We use simple posters and we talk in their language. We did 45 workshops in 2025.</p>
+            <br>
+            <p><b>Schools visited: 200</b> | <b>Free for all schools</b></p>
+        </div>
+
+        <div class="service-card" style="flex:1; min-width:250px; border:1px solid #ddd; padding:15px; border-radius:10px;">
+            <img src="images/team-volunteers.jpg" alt="Community drive volunteers packing aid boxes with food and hygiene products in Pretoria" style="width:100%; border-radius:8px;">
+            <br><br>
+            <h3>3. Community Drives</h3>
+            <p>We partner with local shops in Pretoria and Joburg to collect pads and soap. People can drop donations at our office or we collect. Our volunteers help pack and deliver.</p>
+            <br>
+            <p><b>Partners: 12 shops</b> | <b>Volunteers: 25</b></p>
+        </div>
+
+    </div>
+
+    <br><br>
+    <h3>Search our services</h3>
+    <input type="text" id="serviceSearch" placeholder="Type to search - e.g. pads, workshop, donate" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;">
+    <p id="searchResults" style="margin-top:10px; font-size:14px; color:#666;"></p>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Harvest of Hygiene NPO</p>
+        <p style="font-size:12px;">WEDE5020 Part 2 - Akanyang Montshiwa</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

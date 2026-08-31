@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volunteer or donate to Harvest of Hygiene - help us end period poverty in Gauteng.">
+    <title>Get Involved - Harvest of Hygiene</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+        <h1 class="logo">Harvest of Hygiene</h1>
+        <button id="mobileMenuToggle" style="display:none;">☰</button>
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">What We Do</a>
+            <a href="enquiry.html" class="active">Get Involved</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding:30px 20px;">
+
+    <h2>Volunteer or Donate</h2>
+    <p>Want to help? Fill this form and we will contact you on WhatsApp or email. You can donate pads, soap or money, or you can volunteer with us in Soweto.</p>
+    <br>
+
+    <form id="enquiryForm" style="max-width:600px;">
+        <label for="name" style="display:block; margin-bottom:5px; font-weight:bold;">Full Name: *</label>
+        <input type="text" id="name" placeholder="e.g. Akanyang Maseko" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;" required>
+        <p id="nameError" style="color:red; font-size:12px; display:none;">Please enter your full name</p>
+
+        <label for="email" style="display:block; margin-bottom:5px; font-weight:bold;">Email Address: *</label>
+        <input type="email" id="email" placeholder="e.g. yourname@gmail.com" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;" required>
+        <p id="emailError" style="color:red; font-size:12px; display:none;">Please enter valid email</p>
+
+        <label for="phone" style="display:block; margin-bottom:5px; font-weight:bold;">Phone / WhatsApp:</label>
+        <input type="text" id="phone" placeholder="e.g. 071 234 5678" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+        <label for="helpType" style="display:block; margin-bottom:5px; font-weight:bold;">How do you want to help? *</label>
+        <select id="helpType" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;" required>
+            <option value="">-- Choose --</option>
+            <option value="donate_pads">Donate Pads / Soap</option>
+            <option value="donate_money">Donate Money (R50 per pack)</option>
+            <option value="volunteer">Volunteer in Soweto/Tembisa</option>
+            <option value="partner">Partner as a shop/business</option>
+        </select>
+
+        <label for="message" style="display:block; margin-bottom:5px; font-weight:bold;">Message: *</label>
+        <textarea id="message" rows="4" placeholder="Tell us how you want to help or how many packs you want to donate..." style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;" required></textarea>
+        <p id="messageError" style="color:red; font-size:12px; display:none;">Please write a message</p>
+
+        <button type="submit" class="btn" style="background:#DD6B20; color:white; padding:12px 20px; border:none; border-radius:5px; cursor:pointer; width:100%;">Submit Information</button>
+        <p id="formSuccess" style="color:green; display:none; margin-top:15px; font-weight:bold;">Thank you! We will contact you soon on WhatsApp. - Harvest of Hygiene team</p>
+    </form>
+
+    <br><br>
+    <img src="images/team-volunteers.jpg" alt="Volunteers packing aid boxes with sanitary products for Gauteng school distribution" style="width:100%; max-width:600px; border-radius:10px;">
+    <p style="font-size:13px; margin-top:5px;">Our volunteers packing - you can join us!</p>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Harvest of Hygiene NPO</p>
+        <p style="font-size:12px;">WEDE5020 Part 2 - Akanyang Montshiwa</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

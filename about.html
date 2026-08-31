@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Harvest of Hygiene NPO - founded in 2024 in Pretoria to end period poverty in Gauteng schools.">
+    <title>About Us - Harvest of Hygiene</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+        <h1 class="logo">Harvest of Hygiene</h1>
+        <button id="mobileMenuToggle" style="display:none;">☰</button>
+        <nav class="nav-links" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="services.html">What We Do</a>
+            <a href="enquiry.html">Get Involved</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding:30px 20px;">
+
+    <h2>About Harvest of Hygiene</h2>
+    <p>We are a small NPO from Pretoria, Gauteng. We started in 2024 because we saw many girls missing school every month because they don't have pads. Our mission is simple - make sure every girl has sanitary products and knows about health education.</p>
+    <br>
+    <p>We work mostly in Soweto and Tembisa schools. We give free packs and we also teach girls about hygiene.</p>
+
+    <br><br>
+    <h3>Our Team - Part 2 Images</h3>
+    <p>These are our real team photos from our outreach (I added them for Part 2 requirement)</p>
+    <br>
+
+    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:200px;">
+            <img src="images/team-founder.jpg" alt="Founder shaking hands during NPO partnership meeting in Johannesburg" style="width:100%; border-radius:8px; cursor:pointer;" class="lightbox-img">
+            <p style="font-size:13px; margin-top:5px;">Founder meeting - partnership 2025</p>
+        </div>
+        <div style="flex:1; min-width:200px;">
+            <img src="images/team-volunteers.jpg" alt="Volunteers packing aid boxes with food and water for Soweto distribution drive" style="width:100%; border-radius:8px; cursor:pointer;" class="lightbox-img">
+            <p style="font-size:13px; margin-top:5px;">Our volunteers packing aid boxes</p>
+        </div>
+        <div style="flex:1; min-width:200px;">
+            <img src="images\hygiene-products.jpg" alt="Personal hygiene illustration showing soap, toiletries and education for school girls" style="width:100%; border-radius:8px; cursor:pointer;" class="lightbox-img">
+            <p style="font-size:13px; margin-top:5px;">Hygiene education materials we use</p>
+        </div>
+    </div>
+
+    <br><br>
+    <h3>FAQ - Click to open</h3>
+    <div class="faq-item" style="border:1px solid #ccc; margin-bottom:10px; padding:10px;">
+        <div class="faq-question" style="cursor:pointer; font-weight:bold;">What do you put in the sanitary pack? ▼</div>
+        <div class="faq-answer" style="display:none; margin-top:10px;">
+            We put Bodyform pads, Nivea deodorant, small soap, tissues and a booklet about periods. See photo on home page.
+        </div>
+    </div>
+
+    <div class="faq-item" style="border:1px solid #ccc; margin-bottom:10px; padding:10px;">
+        <div class="faq-question" style="cursor:pointer; font-weight:bold;">Where do you work? ▼</div>
+        <div class="faq-answer" style="display:none; margin-top:10px;">
+            We work in Gauteng - Soweto, Tembisa and Pretoria schools. Our office is in Pretoria.
+        </div>
+    </div>
+
+    <div class="faq-item" style="border:1px solid #ccc; margin-bottom:10px; padding:10px;">
+        <div class="faq-question" style="cursor:pointer; font-weight:bold;">How can I donate? ▼</div>
+        <div class="faq-answer" style="display:none; margin-top:10px;">
+            Go to Get Involved page or contact us on WhatsApp. We accept pads, soap, money.
+        </div>
+    </div>
+
+</main>
+
+<!-- lightbox popup - I added this for Part 2 interactive marks -->
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+    <span id="lightbox-close" style="position:absolute; top:20px; right:30px; color:white; font-size:30px; cursor:pointer;">&times;</span>
+    <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Harvest of Hygiene NPO | Reg: 234-567 NPO</p>
+        <p style="font-size:12px;">WEDE5020 - Akanyang Montshiwa - Images added for Part 2</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
