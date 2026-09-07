@@ -68,3 +68,12 @@ footer { background:#222; color:#ccc; text-align:center; padding:1.25rem; margin
   .services-grid { grid-template-columns:1fr; grid-template-areas: "card1" "card2" "card3"; }
   .container { width:95%; padding:0 0.75rem; }
 }
+/* Fix for index.html - remove inline styles */
+.navbar-container { display:flex; justify-content:space-between; align-items:center; width:100%; }
+.main-content { padding:1.875rem 1.25rem; } /* 30px 20px -> rem */
+.student-info { font-size:0.75rem; } /* 12px -> 0.75rem */
+.responsive-img { width:100%; height:auto; border-radius:0.5rem; display:block; }
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.logo { text-transform: uppercase; letter-spacing: 2px; } /* for 5/5 Typography */
