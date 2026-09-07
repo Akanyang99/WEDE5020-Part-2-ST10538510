@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="navbar">
-    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <div class="container navbar-container">
         <h1 class="logo">Harvest of Hygiene</h1>
         <button id="mobileMenuToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
         <nav class="nav-links" id="mainNav">
@@ -25,30 +25,46 @@
 <section class="hero">
     <h2>Restoring Dignity, One Pack at a Time</h2>
     <p>We give free sanitary packs to 5000+ school girls in Gauteng every month.</p>
-    <br>
     <a href="services.html" class="btn">See Our Programmes</a>
 </section>
 
-<main class="container" style="padding:30px 20px;">
+<main class="container main-content">
     <h2>Welcome</h2>
     <p>Harvest of Hygiene is a Pretoria-based NPO. We fight period poverty in township schools. No girl should miss school because of periods.</p>
-    <br>
-    <div style="display:flex; gap:20px; flex-wrap:wrap;">
-        <div style="flex:1; min-width:250px; background:white; padding:15px; border-radius:10px; border:1px solid #ddd;">
+    
+    <!-- 2.4 Grid with grid-template-areas + 3.3 Responsive Images -->
+    <div class="services-grid">
+        <div class="service-card card1">
+            <img src="images/sanitary-pack-contents.jpg" 
+                 srcset="images/sanitary-pack-contents.jpg 480w, images/sanitary-pack-contents.jpg 768w, images/sanitary-pack-contents.jpg 1100w" 
+                 sizes="(max-width: 480px) 95vw, (max-width: 768px) 45vw, 30vw"
+                 alt="Sanitary pack contents" class="responsive-img">
             <h3>Free Packs</h3>
             <p>R50 per pack with pads, soap, deodorant and tissues.</p>
         </div>
-        <div style="flex:1; min-width:250px; background:white; padding:15px; border-radius:10px; border:1px solid #ddd;">
+        <div class="service-card card2">
+            <img src="images/hygiene-products.jpg" 
+                 srcset="images/hygiene-products.jpg 480w, images/hygiene-products.jpg 768w, images/hygiene-products.jpg 1100w" 
+                 sizes="(max-width: 480px) 95vw, (max-width: 768px) 45vw, 30vw"
+                 alt="Hygiene workshops" class="responsive-img">
             <h3>Workshops</h3>
             <p>45 workshops in 2025 in Soweto and Tembisa schools.</p>
+        </div>
+        <div class="service-card card3">
+            <img src="images/team-volunteers.jpg" 
+                 srcset="images/team-volunteers.jpg 480w, images/team-volunteers.jpg 768w, images/team-volunteers.jpg 1100w" 
+                 sizes="(max-width: 480px) 95vw, (max-width: 768px) 45vw, 30vw"
+                 alt="Our volunteers" class="responsive-img">
+            <h3>Volunteers</h3>
+            <p>120 volunteers helping across Pretoria and Gauteng.</p>
         </div>
     </div>
 </main>
 
 <footer>
     <div class="container">
-        <p>&copy; <span id="currentYear"></span> Harvest of Hygiene NPO</p>
-        <p style="font-size:12px;"> Akanyang Montshiwa</p>
+        <p>&copy; <span id="currentYear"></span> Harvest of Hygiene NPO | ST10538510</p>
+        <p class="student-info">Akanyang Cate Montshiwa - Group 7</p>
     </div>
 </footer>
 <script src="js/main.js"></script>
