@@ -62,7 +62,7 @@ Tested with Chrome DevTools Device Toolbar. Screenshots below prove layout, nav,
 ## 3.4 Responsive Screenshots (Evidence)
 
 ### Desktop 1920px - 3 Column Grid Layout
-![Desktop View](images/screenshots/desktop.png)
+![Desktop 1920px](images/screenshots/desktop.png)
 
 ### Tablet 768px - 2 Column Grid + Hamburger Menu
 ![Tablet View](images/screenshots/tablet.png)
