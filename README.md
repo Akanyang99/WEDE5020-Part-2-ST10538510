@@ -62,13 +62,13 @@ Tested with Chrome DevTools Device Toolbar. Screenshots below prove layout, nav,
 ## 3.4 Responsive Screenshots (Evidence)
 
 ### Desktop 1920px - 3 Column Grid Layout
-![Desktop 1920px](images/screenshots/desktop.png)
+![Desktop 1920px](images/screenshots/desktop-1920.png)
 
 ### Tablet 768px - 2 Column Grid + Hamburger Menu
-![Tablet View](images/screenshots/tablet.png)
+![Tablet 768px](images/screenshots/tablet-768.png)
 
 ### Mobile 375px - 1 Column Stack + Vertical Nav
-![Mobile View](images/screenshots/mobile.png)
+![Mobile 375px](images/screenshots/mobile-375.png)
 
 **Testing Notes:**
 - Layout: grid-template-areas changes correctly 3->2->1 column
