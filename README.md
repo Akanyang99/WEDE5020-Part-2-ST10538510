@@ -90,4 +90,4 @@ Tested with Chrome DevTools Device Toolbar. Screenshots below prove layout, nav,
 4. Validate HTML/CSS: https://validator.w3.org/
 
 ## Student
-ST10538510 - Akanyang Cate Montshiwa - Group 7 - IIE Rosebank College Pretoria
+ST10538510 - Akanyang Cate Montshiwa - Group 7 
